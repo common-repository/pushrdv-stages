@@ -1,0 +1,153 @@
+/* ------------- Frontend CSS ------------- */
+.stage-list{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.stage{
+    height: 80px;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.stage-date{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #fff;
+    background-color: #3467B1;
+    display: inline-block;
+    width: calc(10% - 10px);
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    float: left;
+}
+.stage-day {
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    line-height: 40px;
+}
+.stage-month {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.stage-year {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    line-height: 18px;
+}
+.stage-content{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display:inline-block;
+    color: #3467B1;
+    height: calc(100% - 5px);
+    width: calc(70% - 20px);
+    background-color: #fff;
+    -moz-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    padding: 10px 5px 5px 15px;
+}
+.stage-btn{
+    padding: 1px 3px 1px 3px;
+    background-color: #fff;
+    color: #3467B1;
+    display: inline-block;
+    margin-top: 5px;
+}
+.stage-btn:hover{
+    background-color: #3467B1;
+    color: #fff;
+    text-decoration: none;
+}
+.stage-content a{
+    color:#3467B1;display:inline-block;
+}
+.stage-content:hover{
+    background-color:#3467B1;color:#fff;text-decoration: none;
+}
+.stage-title{
+    font-size:16px;
+    line-height: 18px;
+    font-weight:600;
+}
+.stage-dates{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+}
+.stage-prices{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #fff;
+    background-color: #3467B1;
+    display: inline-block;
+    width: calc(20% - 10px);
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    float: right;
+}
+.stage-price {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+.hideItem{
+    display: none;
+}
+
+@media only screen and (max-width: 959px) {
+    .stage-title{
+        font-size:14px;
+        line-height: 16px;
+    }
+    .stage-day{
+        font-size:14px;line-height: 18px;
+    }
+    .stage-month{
+        font-size:10px;line-height: 14px;
+    }
+    .stage-year{
+        font-size:12px;line-height: 16px;
+    }
+    .stage-price{
+        font-size:14px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .stage-date{
+        display: none !important;
+    }
+    .stage-content{
+        width: calc(80% - 20px) !important;
+    }
+    .stage-description{
+        display: none;
+    }
+    .stage-btn{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .stage-btn{
+        display: none;
+    }
+    .stage-title{
+        font-size:13px;
+    }
+    .stage-dates{
+        font-size: 10px;
+    }
+}
